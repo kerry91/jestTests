@@ -1,0 +1,13 @@
+{
+  "name": "jesttest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "testWatch": "jest --watchAll"
+  },
+
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
