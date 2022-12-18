@@ -1,6 +1,6 @@
-const fetch = require('node-fetch').default
+//const fetch = require('node-fetch')
 
-const getPeople = () => {
+const getPeople = (fetch) => {
     return fetch('https://swapi.dev/api/people')
         .then(res => res.json())
         .then(data => {
@@ -11,4 +11,11 @@ const getPeople = () => {
         }).catch(err => err)
 }
 
-module.exports = getPeople
+const isCity = (city, db) => {
+    return db.includes(city)
+}
+
+module.exports = {
+    getPeople,
+    isCity
+}
